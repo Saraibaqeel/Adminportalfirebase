@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <script src="https://kit.fontawesome.com/6088c36725.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://kit.fontawesome.com/6088c36725.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <div id="navbar" class="container-fluid"><ul style="margin-top: 1%;">
+      <a class="navbar-brand" id="image" href="#"><i class="fa-solid fa-user"></i>
+      <a class="navbar-brand" id="uname" href="#">Admin Panel</a>
+      </a>
+   
+        </ul>
+        
+          
+         
+       
+        <form class="d-flex">
+
+            <i id="friends" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" class="fa-solid fa-bars"></i>&nbsp;&nbsp;&nbsp;
+          
+        </form>
+      </div>
+    </div>
+  </nav>
+   <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel">Panel</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <a href="classes.html"><button class="button">Class Detials</button></a>
+        <a href="Students.html"><button class="button">Students Detials</button></a>
+        <a href="admin.html"><button class="button">Admin Panel</button></a>
+        <a href="class.html"><button class="button">Add Class</button></a>
+        <a href="Student.html"><button class="button">Add Student</button></a>
+    </div>
+  </div>
+
+    
+<div class="login  form animate__animated  animate__fadeInLeft"   ><p class="heading">Class Detials</p>
+    
+        
+    <label class="Sub-heading" >Class Timings</label> 
+    <input class="input1 input-new Timings" id="class-time1" type="time" name="username"><span style="color: white; font-weight:500; font-size:50px; margin-left:7%;">-</span><input class="input1 input-new Timings"  id="class-time2" type="time" name="username">
+    <label class="Sub-heading" >Class Schedule</label> 
+    <input class="input1 input-new" id="Schedule-Time" type="text" name="username">
+    <label class="Sub-heading" >Teachers Name</label> 
+    <input class="input1 input-new" id="Teacher-Name" type="text" name="username">
+    
+    <label class="Sub-heading" >Section Name</label> 
+    <input class="input1 input-new" id="Section-Name" type="text" name="username">
+    <label class="Sub-heading" >Course Name</label> 
+    <input class="input1 input-new" id="Course-Name" type="text" name="username">
+    <label class="Sub-heading" >Batch Number</label> 
+    <input class="input1 input-new" id="Batch-Number" type="text" name="username">
+    
+    
+   
+   <div id="btn1" class="btn"><button id="Add-Class" class="button">Add Class</button> </div>
+  
+
+</div>
+    
+  <div id="list"></div>
+  
+    <script type="module" src="class.js"></script>
+   
+</body>
+</html>

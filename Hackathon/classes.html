@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/6088c36725.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <script src="https://kit.fontawesome.com/6088c36725.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <div id="navbar" class="container-fluid"><ul style="margin-top: 1%;">
+      <a class="navbar-brand" id="image" href="#"><i class="fa-solid fa-user"></i>
+      <a class="navbar-brand" id="uname" href="#">Admin Panel</a>
+      </a>
+   
+        </ul>
+        
+          
+         
+       
+        <form class="d-flex">
+
+            <i id="friends" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" class="fa-solid fa-bars"></i>&nbsp;&nbsp;&nbsp;
+          
+        </form>
+      </div>
+    </div>
+  </nav>
+ 
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div  class="modal-body">
+          <label>Teacher Name</label>
+          <input style="border: 1px solid black; color:black;" id="teacher" type="text">
+          <label>Schedule</label>
+          <input style="border: 1px solid black; color:black;" id="schedule" type="text">
+          <label>Section</label>
+          <input style="border: 1px solid black; color:black;" id="section" type="text">
+          <label>Course</label>
+          <input style="border: 1px solid black; color:black;" id="course" type="text">
+          <label>Batch</label>
+          <input style="border: 1px solid black; color:black;" id="batch" type="text">
+         
+        
+        
+          <div id="modal1"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel">Panel</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <a href="classes.html"><button class="button">Class Detials</button></a>
+    <a href="Students.html"><button class="button">Students Detials</button></a>
+    <a href="admin.html"><button class="button">Admin Panel</button></a>
+    <a href="class.html"><button class="button">Add Class</button></a>
+    <a href="Student.html"><button class="button">Add Student</button></a>
+    </div>
+  </div>
+
+<p class="heading">Classes</p>
+
+    
+<div id="classes" class="login  form div-edit animate__animated  animate__fadeInLeft"   >
+    
+        
+   
+  
+   
+</div>
+    
+  <div id="list"></div>
+  
+    <script type="module" src="classes.js"></script>
+   
+</body>
+</html>
